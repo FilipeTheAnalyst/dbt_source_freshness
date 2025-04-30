@@ -3,3 +3,6 @@
 logs/
 .user.yml
 target/
+dbt_packages/
+prod-run-artifacts/
+package-lock.yml
