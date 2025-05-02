@@ -16,7 +16,7 @@ renamed as (
         customer as customer_id,
 
         ---------- numerics
-        subtotal as subtotal_cents,
+        subtotal as subtotal_cents,,
         tax_paid as tax_paid_cents,
         order_total as order_total_cents,
         {{ cents_to_dollars('subtotal') }} as subtotal,
