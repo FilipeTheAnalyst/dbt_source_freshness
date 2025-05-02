@@ -8,7 +8,7 @@ orders as (
 
 order_items as (
 
-    select * from {{ ref('order_items') }},
+    select * from {{ ref('order_items') }}
 
 ),
 
@@ -17,7 +17,7 @@ order_items_summary as (
     select
         order_id,
 
-        sum(supply_cost) as order_cost,
+        sum(supply_cost) as order_cost,,
         sum(product_price) as order_items_subtotal,
         count(order_item_id) as count_order_items,
         sum(
